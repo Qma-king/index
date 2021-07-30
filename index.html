@@ -5,6 +5,13 @@
 <title>Shakmon---看见更好的自己</title>
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <link href="css/rjleft.css" type="text/css" rel="stylesheet">
+<!--Luara样式文件-->
+<!--渐隐样式-->
+<link rel="stylesheet" type="text/css" href="css/luara.css"/>
+<!--左滑样式-->
+<link rel="stylesheet" type="text/css" href="css/luara.left.css"/>
+<!--上滑样式-->
+<link rel="stylesheet" type="text/css" href="css/luara.top.css"/>
 <link rel="icon" href="image/shakmon-3.png" type="image/x-icon"/>
 </head>
 
@@ -20,7 +27,7 @@
     <li>ShakOS</li>
     </a> <a href="xtgg.html">
     <li>系统公告</li>
-    </a> <a href="downloads.html">
+    </a> <a href="downlands.html">
     <li>软件下载</li>
     </a> <a href="gywm.html">
     <li>关于我们</li>
@@ -28,7 +35,33 @@
     <li>软件帮助</li>
     </a>
   </ul>
-</div><!--软件分享模块（左侧)-->
+</div>
+<!--软件分享模块（左侧)--> 
+<script src="js/jquery-1.8.3.min.js"></script> 
+<!--Luara js文件--> 
+<script src="js/jquery.luara.0.0.1.min.js"></script>
+<div class="example2">
+  <ul>
+    <li><a href="program/shak_IwannabeaSAD.zip"><img src="image/1.png"></a></li>
+	<li><img src="image/2.png"></li>
+  </ul>
+  <ol>
+    <li></li>
+    <li></li>
+  </ol>
+</div>
+	<script>
+        $(function(){
+            <!--调用Luara示例-->
+            $(".example2").luara({width:"700",height:"300",interval:4500,selected:"seleted",deriction:"left"});
+
+        });
+    </script>
+	
+<br>
+<br>
+<br>
+<br>
 <div class="rjleft">
   <p class="rltitle">侠客盟软件下载：</p>
   <ul>
